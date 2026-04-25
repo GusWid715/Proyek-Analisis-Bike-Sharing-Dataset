@@ -1,7 +1,5 @@
 # Proyek-Analisis-Bike-Sharing-Dataset
 
-Berikut adalah draf isi berkas `README.md` yang sudah disusun dengan rapi dan profesional. Kamu bisa langsung *copy* seluruh teks di dalam blok kode di bawah ini dan *paste* ke dalam file `README.md` milikmu.
-
 ```markdown
 # Bike Sharing Data Analysis Dashboard 🚲
 
@@ -10,13 +8,17 @@ Dashboard ini dibuat menggunakan **Streamlit** untuk memvisualisasikan hasil ana
 ## 📁 Struktur Direktori
 Pastikan struktur folder Anda terlihat seperti ini sebelum menjalankan aplikasi:
 ```text
-submission/
-├── dashboard/
-│   ├── main_data.csv
-│   └── dashboard.py
-├── notebook.ipynb
-├── README.md
-└── requirements.txt
+submission
+├───dashboard
+| ├───main_data.csv
+| └───dashboard.py
+├───data
+| ├───data_1.csv
+| └───data_2.csv
+├───notebook.ipynb
+├───README.md
+└───requirements.txt
+└───url.txt
 ```
 
 ## 🛠️ Setup Environment
@@ -34,17 +36,9 @@ pip install -r requirements.txt
 ### 2. Menggunakan Venv (Bawaan Python)
 Jika Anda menggunakan Venv standar, jalankan perintah berikut:
 
-**Windows:**
 ```bash
 python -m venv dicoding-bike
 dicoding-bike\Scripts\activate
-pip install -r requirements.txt
-```
-
-**Mac/Linux:**
-```bash
-python3 -m venv dicoding-bike
-source dicoding-bike/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -61,4 +55,3 @@ pip install -r requirements.txt
    streamlit run dashboard.py
    ```
 5. Tunggu beberapa saat, dan dashboard akan secara otomatis terbuka di *browser* default Anda (biasanya pada alamat lokal `http://localhost:8501`).
-```
