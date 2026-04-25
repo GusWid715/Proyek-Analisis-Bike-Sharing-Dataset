@@ -7,7 +7,8 @@ Dashboard ini dibuat menggunakan **Streamlit** untuk memvisualisasikan hasil ana
 
 ## 📁 Struktur Direktori
 Pastikan struktur folder Anda terlihat seperti ini sebelum menjalankan aplikasi:
-```text
+
+```bash
 submission
 ├───dashboard
 | ├───main_data.csv
