@@ -1,6 +1,6 @@
 # Proyek-Analisis-Bike-Sharing-Dataset
 
-```bash
+```markdowm
 # Bike Sharing Data Analysis Dashboard 🚲
 
 Dashboard ini dibuat menggunakan **Streamlit** untuk memvisualisasikan hasil analisis data eksploratif (EDA) dari dataset *Bike Sharing*. Dashboard ini berfokus untuk menyajikan *insight* bisnis terkait pola perilaku pengguna berdasarkan kondisi suhu udara dan tipe hari (hari kerja vs akhir pekan).
