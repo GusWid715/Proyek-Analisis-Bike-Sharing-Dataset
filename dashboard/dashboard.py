@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import os
 
 # Set Konfigurasi Halaman
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
@@ -12,7 +13,14 @@ sns.set(style='dark')
 # --- LOAD DATA ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("main_data.csv")
+    # Mengambil direktori tempat file dashboard.py berada
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Gabungkan direktori tersebut dengan nama file CSV
+    file_path = os.path.join(current_dir, "main_data.csv")
+    
+    # Baca file CSV menggunakan file_path
+    df = pd.read_csv(file_path)
     df["dteday"] = pd.to_datetime(df["dteday"])
     return df
 
